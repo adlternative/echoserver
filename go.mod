@@ -1,6 +1,6 @@
 module github.com/adlternative/echoserver
 
-go 1.24.1
+go 1.18
 
 require github.com/gin-gonic/gin v1.9.1
 
