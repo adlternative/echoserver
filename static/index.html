@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>中国国际混合象棋</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>中国国际混合象棋</h1>
+        <div class="game-info">
+            <div id="current-turn">当前回合: <span id="turn-value">红方</span></div>
+            <button id="reset-button">重新开始</button>
+        </div>
+        <div class="board-container">
+            <div id="chess-board" class="chess-board"></div>
+        </div>
+        <div class="game-rules">
+            <h2>游戏规则</h2>
+            <p>这是一个中国象棋和国际象棋的混合版本。红方使用中国象棋的棋子，黑方使用国际象棋的棋子。</p>
+            <h3>棋子走法</h3>
+            <h4>红方（中国象棋）：</h4>
+            <ul>
+                <li><strong>車(Chariot/Rook)</strong>: 可以横向或纵向移动任意格数</li>
+                <li><strong>馬(Horse/Knight)</strong>: 走"日"字，先横/纵向移动一格，再斜向移动一格</li>
+                <li><strong>象(Elephant)</strong>: 走"田"字，可斜向移动两格，不能过河</li>
+                <li><strong>士(Advisor)</strong>: 可斜向移动一格，不能离开九宫格</li>
+                <li><strong>帥(General/King)</strong>: 可横向或纵向移动一格，不能离开九宫格</li>
+                <li><strong>炮(Cannon)</strong>: 移动规则与車相同，但吃子时需要跳过一个棋子</li>
+                <li><strong>兵(Soldier/Pawn)</strong>: 只能向前移动一格，过河后可以横向移动一格</li>
+            </ul>
+            <h4>黑方（国际象棋）：</h4>
+            <ul>
+                <li><strong>R(Rook/车)</strong>: 可以横向或纵向移动任意格数</li>
+                <li><strong>N(Knight/马)</strong>: 走"L"形，可以跳过其他棋子</li>
+                <li><strong>B(Bishop/象)</strong>: 可沿对角线移动任意格数</li>
+                <li><strong>Q(Queen/后)</strong>: 可横向、纵向或对角线移动任意格数</li>
+                <li><strong>K(King/王)</strong>: 可向任意方向移动一格</li>
+                <li><strong>P(Pawn/兵)</strong>: 第一次移动可前进一格或两格，之后只能前进一格，吃子时斜向移动一格</li>
+            </ul>
+        </div>
+    </div>
+    <script src="/static/js/game.js"></script>
+</body>
+</html>
