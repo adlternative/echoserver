@@ -1,3 +1,3 @@
 module github.com/adlternative/echoserver
 
-go 1.24.1
+go 1.18
